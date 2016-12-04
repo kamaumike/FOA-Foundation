@@ -2,10 +2,10 @@
 
 @section('title', 'Contact')
 
-@section('sidebar')
+@section('navbar')
     @parent
 
-    <p>This is appended to the master sidebar.</p>
+    <p>This is appended to the master navigation bar.</p>
 @endsection
 
 @section('content')

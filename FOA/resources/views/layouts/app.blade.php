@@ -38,8 +38,8 @@
 
     </head>
     <body class="index">
-        @section('sidebar')
-            <p>This is the master sidebar.</p>
+        @section('navbar')
+            <p>This is the master navigation bar.</p>
             <!-- Start  Logo & Naviagtion  -->
             <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
                 <div class="container">
@@ -57,7 +57,7 @@
                     <!-- End Toggle Navigation For Mobile display -->
 
                     <div class="collapse navbar-collapse">
-                            
+                                
                         <!-- Start Navigation List -->
                         <ul class="nav navbar-nav navbar-right">
                             <li class="hidden">
