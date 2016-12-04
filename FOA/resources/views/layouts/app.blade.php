@@ -34,7 +34,7 @@
         <link rel="stylesheet" type="text/css" title="green" href="{{ asset('assets/css/color/green.css') }}">
 
         <!-- Modernizer js -->
-        <link rel="stylesheet" href="{{ asset('assets/js/modernizr.custom.js') }}">        
+        <script src="{{ asset('assets/js/modernizr.custom.js') }}"></script>        
 
     </head>
     <body class="index">
@@ -44,9 +44,8 @@
             <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
                 <div class="container">
                     <!-- Start Toggle Navigation For Mobile display -->
-                    <div class="navbar-header">                 
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <!-- <i class="fa fa-bars"></i> -->
+                    <div class="navbar-header">             
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">                            
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -56,9 +55,8 @@
                     </div>
                     <!-- End Toggle Navigation For Mobile display -->
 
-                    <div class="collapse navbar-collapse">
-                                
-                        <!-- Start Navigation List -->
+                    <!-- Start collecting the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">  
                         <ul class="nav navbar-nav navbar-right">
                             <li class="hidden">
                                 <a href="index.html"></a>
@@ -79,10 +77,11 @@
                                 <a href="contact.html">
                                     Contact</a>
                             </li>
-                        </ul>
-                        <!-- End Navigation List -->
+                        </ul>                        
                     </div>
+                    <!-- /.navbar-collapse -->             
                 </div>
+                <!-- /.container -->
             </nav>
             <!-- End Header Logo & Naviagtion -->   
         @show     
@@ -139,7 +138,29 @@
                 <div class="dot1"></div>
                 <div class="dot2"></div>
             </div>
-        </div>        
+        </div>    
 
+        <!-- jQuery Version 2.1.1 -->
+        <script src="assets/js/jquery-2.1.1.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/count-to.js"></script>
+        <script src="assets/js/jquery.appear.js"></script>
+        <script src="assets/js/cbpAnimatedHeader.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.fitvids.js"></script>
+        <script src="assets/js/styleswitcher.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="assets/js/jqBootstrapValidation.js"></script>
+        <script src="assets/js/contact_me.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
