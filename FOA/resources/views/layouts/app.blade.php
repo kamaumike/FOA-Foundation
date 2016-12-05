@@ -28,6 +28,7 @@
 
         <!-- Custom CSS -->
         <!-- <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}"> -->
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/custom-style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
 
         <!-- Colors CSS -->
@@ -74,7 +75,7 @@
                                 <a href="portfolio.html">Portfolio</a>
                             </li>
                             <li>
-                                <a href="contact.html">
+                                <a class="page-scroll" href="{{ url('contact') }}">
                                     Contact</a>
                             </li>
                         </ul>                        
@@ -90,9 +91,80 @@
             @yield('content')
         </div>
 
-        <!-- Start Footer Section -->
         <section id="contact" class="contact">
-            <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                @yield('contact-us')
+            </div>  
+        </section>      
+
+        <!-- Start Footer Section -->
+{{--         <section id="contact" class="contact">
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom"> --}}
+        <footer>    
+            <div class="footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Lorem Ipsum </h3>
+                            <ul>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                                <li> <a href="#"> Lorem Ipsum </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                            <h3 class="text-center"> STAY WITH US </h3>
+                            <ul>
+                                <li>
+                                    <div class="input-append newsletter-box text-center">
+                                        <input type="text" class="full text-center" placeholder="Enter email for newsletters">
+                                        <button class="btn  bg-gray" type="button"> Subscribe <i class="fa fa-long-arrow-right"> </i> </button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="social">
+                                <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                                <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--/.row--> 
+                </div>
+                <!--/.container--> 
+            </div>
+            <!--/.footer-->            
+            <div class="footer-bottom">    
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 col-xs-12">
@@ -104,9 +176,7 @@
                                     &nbsp;&nbsp;
                                     <a href="#"><i class="fa fa-linkedin"></i></a>
                                     &nbsp;&nbsp;
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                    &nbsp;&nbsp;
-                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                    <a href="#"><i class="fa fa-google-plus"></i></a>                               
                                 </ul>
                             </div>                 
                         </div>
@@ -129,8 +199,10 @@
                         </div>
                     </div>
                 </div>
-            </nav>
-        </section> 
+            </div>
+        </footer>
+{{--             </nav>
+        </section> --}} 
         <!-- End Footer Section -->
 
         <div id="loader">
